@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Contact</title>
+      <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+      <link href="css/style.css" rel="stylesheet">
+      <link rel="icon" href="img/logo.gif">
+    </head>
+    <body id="page5">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html" title="home">Home</a></li>
+  				  <li><a href="about-us.html" title="about us">About Us</a></li>
+  				  <li><a href="services.html" title="services">Services</a></li>
+  				  <li><a href="maintenance.html" title="maintenance">Maintenance</a></li>
+            <li><a href="contact.html" title="contact" class="active">Contact</a></li>
+    			</ul>
+        </nav>
+         <div id="divHeader"> 
+         <a href="index.html " title="Home"><img width="280" alt="logo" src="img/logo.gif"></a> 
+        </div>
+      </header>
+      <main id="content">
+        <h1>Contact</h1>
+        <p><img width="512" height="250" alt="Contact picture" src="img/contact.jpg"></p>     
+        <form id="message" action="contact.php" method="get">              
+          <fieldset>
+            <legend>Talk with us</legend>
+            <div>
+              <input type="text" id="fname" name="fname" required placeholder="First Name *" size="40">
+            </div>
+            <div>
+              <input type="text" id="lname" name="lname" required placeholder="Last Name *" size="40">
+            </div>
+            <div>
+              <input type="text" id="address" name="address" placeholder="Address " size="40">
+            </div>									
+            <div>
+              <input type="tel" id="phone" name="phone" placeholder="Phone " size="40">
+            </div>
+            <div>
+              <input type="email" id="email" name="email" required placeholder="E-mail *" size="40">
+            </div>
+            <div>
+              <select id="subject">
+                <option disabled selected hidden >Subject:</option>
+                <option value="appointment">Make an appointment</option>
+                <option value="quotation">Parts quotation</option>
+                <option value="claim">Claim</option>    
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <div>
+              <label>Message:</label>
+            </div>  
+            <textarea name = "message" >
+            </textarea>
+            <br>
+            <div>
+              <button type="submit">Submit</button>
+            </div>
+            <div>How much did you like our website?</div>
+            <div>
+              <label id="range">From 1 to 5</label>
+              <input type="range" id="like" name="like" min="1" max="5">
+            </div>
+          </fieldset>	       
+        </form>
+        <p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.7161078499457!2d-47.920738686293156!3d-22.55230498519321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c7baab96d39801%3A0x4d21dd795bc3917c!2sBosch%20S%C3%A3o%20Pedro!5e0!3m2!1spt-BR!2sca!4v1587070580874!5m2!1spt-BR!2sca"></iframe>
+        </p>
+      </main>
+      <footer>
+        <p><small>&copy; All Rigths Reserved. Developed by Murilo Moraes</small></p>
+      </footer>
+    </body>
+  </html>
